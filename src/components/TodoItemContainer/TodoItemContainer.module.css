@@ -1,0 +1,76 @@
+.todoitemsContainer {
+  width: 100%;
+  max-height: 310px;
+  max-width: 100%; /* Prevents overflow */
+  background-color: rgba(217, 217, 217, 0.4);
+  margin-top: 35px;
+  padding: 15px;
+  border-radius: 8px;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 80px;
+}
+
+.todoitemsContainer::-webkit-scrollbar {
+  width: 8px; /* Slightly narrower scrollbar */
+}
+
+.todoitemsContainer::-webkit-scrollbar-track {
+  background: rgba(87, 86, 86, 0.1); /* Slightly transparent background */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.todoitemsContainer::-webkit-scrollbar-thumb {
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Border for contrast */
+}
+
+.todoitemsContainer:-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7); /* Darker on hover */
+}
+
+.todoitemsContainer::-webkit-scrollbar-thumb {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+.todoitem {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.itemRow {
+  display: flex;
+  width: 100%;
+  background-color: rgba(218, 214, 214, 0.6);
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 450;
+}
+
+.todoname {
+  max-width: 150px;
+  min-width: 150px;
+  word-wrap: break-word;
+}
+
+.tododate {
+  width: auto;
+}
+
+.deleteBtn > button {
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  background-color: rgb(255, 30, 0);
+  padding: 8px;
+  color: white;
+}
